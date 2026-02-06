@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - ZAGRED Beauty & Marketing</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <header class="main-header">
+        <div class="container-nav">
+            <div class="logo">
+                <h1>✨ ZAGRED</h1>
+            </div>
+            <nav class="main-nav" id="mainNav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html" class="active">Products</a></li>
+                    <li><a href="about.html">Contact</a></li>
+                    <li><a href="signup.html" class="btn-signup">Get Started</a></li>
+                </ul>
+                <button class="mobile-toggle" id="mobileToggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="page-hero">
+        <div class="container">
+            <h1 class="fade-in-up">Premium Beauty Products<br>& Marketing Solutions</h1>
+            <p class="fade-in-up">Discover ZAGRED's curated collection of beauty essentials and digital marketing services designed to elevate your brand and enhance your natural beauty.</p>
+        </div>
+    </section>
+
+    <!-- Collections Section -->
+    <section class="shop-section">
+        <div class="container">
+            <h2 class="section-title">Our Collections</h2>
+            <p class="section-subtitle">Explore our premium product lines</p>
+            <div class="shop-grid">
+                <div class="shop-item scroll-reveal">
+                    <div class="shop-image">
+                        <div class="placeholder-image collection-1">
+                            <div class="image-content">
+                                <img src="images/permium-skincare.jpg" alt="">
+                                <p>Skincare Essentials</p>
+                            </div>
+                        </div>
+                        <div class="shop-overlay">
+                            <button class="btn-view">View Collection</button>
+                        </div>
+                    </div>
+                    <h3>Premium Skincare</h3>
+                </div>
+                <div class="shop-item scroll-reveal">
+                    <div class="shop-image">
+                        <div class="placeholder-image collection-2">
+                            <div class="image-content">
+                                 <img src="https://images.unsplash.com/photo-1512496015851-a90fb38ba796?w=800&h=1000&fit=crop&q=80" alt="">
+                                <p>Makeup Artistry</p>
+                            </div>
+                        </div>
+                        <div class="shop-overlay">
+                            <button class="btn-view">View Collection</button>
+                        </div>
+                    </div>
+                    <h3>Professional Makeup</h3>
+                </div>
+                <div class="shop-item scroll-reveal">
+                    <div class="shop-image">
+                        <div class="placeholder-image collection-3">
+                            <div class="image-content">
+                               <img src="images/luxury-hair.jpg" alt="">
+                                <p>Hair Solutions</p>
+                            </div>
+                        </div>
+                        <div class="shop-overlay">
+                            <button class="btn-view">View Collection</button>
+                        </div>
+                    </div>
+                    <h3>Luxury Haircare</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products-section">
+        <div class="container">
+            <h2 class="section-title">Featured Products</h2>
+            <p class="section-subtitle">Discover our best-selling beauty solutions</p>
+            
+            <!-- Filter Buttons -->
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All Products</button>
+                <button class="filter-btn" data-filter="skincare">Skincare</button>
+                <button class="filter-btn" data-filter="makeup">Makeup</button>
+                <button class="filter-btn" data-filter="haircare">Haircare</button>
+            </div>
+
+            <div class="products-grid">
+                <div class="product-card scroll-reveal" data-category="skincare">
+                    <div class="product-image">
+                        <div class="placeholder-image product-1">
+                            <div class="image-content">
+                                <img src="images/radiance-serum.jpg" alt="">
+                                <p>Premium Serum</p>
+                            </div>
+                        </div>
+                        <div class="product-badge">New</div>
+                        <div class="product-actions">
+                            <button class="btn-wishlist" aria-label="Add to wishlist">
+                                <i class="far fa-heart"></i>
+                            </button>
+                            <button class="btn-quick-view" aria-label="Quick view">
+                                <i class="far fa-eye"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Radiance Boost Serum</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span>(4.5)</span>
+                        </div>
+                        <p class="product-description">Advanced formula with vitamin C and hyaluronic acid for glowing skin</p>
+                        <div class="product-footer">
+                            <span class="product-price">₦15,900</span>
+                            <button class="btn-add-cart">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card scroll-reveal" data-category="makeup">
+                    <div class="product-image">
+                        <div class="placeholder-image product-2">
+                            <div class="image-content">
+                                <img src="images/make-up-set.jpg" alt="">
+                                <p>Pro Makeup Kit</p>
+                            </div>
+                        </div>
+                        <div class="product-badge sale">Sale</div>
+                        <div class="product-actions">
+                            <button class="btn-wishlist" aria-label="Add to wishlist">
+                                <i class="far fa-heart"></i>
+                            </button>
+                            <button class="btn-quick-view" aria-label="Quick view">
+                                <i class="far fa-eye"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Professional Makeup Set</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <span>(4.0)</span>
+                        </div>
+                        <p class="product-description">Complete 24-piece makeup collection for flawless application</p>
+                        <div class="product-footer">
+                            <span class="product-price">
+                                <span class="old-price">₦25,000</span> ₦18,500
+                            </span>
+                            <button class="btn-add-cart">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card scroll-reveal" data-category="haircare">
+                    <div class="product-image">
+                        <div class="placeholder-image product-3">
+                            <div class="image-content">
+                                <img src="images/deep-hair-mask.jpg" alt="">
+                                <p>Hair Treatment</p>
+                            </div>
+                        </div>
+                        <div class="product-actions">
+                            <button class="btn-wishlist" aria-label="Add to wishlist">
+                                <i class="far fa-heart"></i>
+                            </button>
+                            <button class="btn-quick-view" aria-label="Quick view">
+                                <i class="far fa-eye"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Deep Repair Hair Mask</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>(5.0)</span>
+                        </div>
+                        <p class="product-description">Intensive conditioning treatment for damaged and dry hair</p>
+                        <div class="product-footer">
+                            <span class="product-price">₦12,500</span>
+                            <button class="btn-add-cart">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card scroll-reveal" data-category="skincare">
+                    <div class="product-image">
+                        <div class="placeholder-image product-4">
+                            <div class="image-content">
+                                <img src="images/day-cream.jpg" alt="">
+                                <p>Moisturizer</p>
+                            </div>
+                        </div>
+                        <div class="product-actions">
+                            <button class="btn-wishlist" aria-label="Add to wishlist">
+                                <i class="far fa-heart"></i>
+                            </button>
+                            <button class="btn-quick-view" aria-label="Quick view">
+                                <i class="far fa-eye"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Hydrating Day Cream</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span>(4.7)</span>
+                        </div>
+                        <p class="product-description">24-hour moisture with SPF 30 protection</p>
+                        <div class="product-footer">
+                            <span class="product-price">₦13,900</span>
+                            <button class="btn-add-cart">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card scroll-reveal" data-category="makeup">
+                    <div class="product-image">
+                        <div class="placeholder-image product-5">
+                            <div class="image-content">
+                                <img src="images/lipstick-collection.jpg" alt="">
+                                <p>Lipstick Set</p>
+                            </div>
+                        </div>
+                        <div class="product-badge">Trending</div>
+                        <div class="product-actions">
+                            <button class="btn-wishlist" aria-label="Add to wishlist">
+                                <i class="far fa-heart"></i>
+                            </button>
+                            <button class="btn-quick-view" aria-label="Quick view">
+                                <i class="far fa-eye"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Matte Lipstick Collection</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>(4.9)</span>
+                        </div>
+                        <p class="product-description">6 stunning shades with long-lasting matte finish</p>
+                        <div class="product-footer">
+                            <span class="product-price">₦21,500</span>
+                            <button class="btn-add-cart">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card scroll-reveal" data-category="haircare">
+                    <div class="product-image">
+                        <div class="placeholder-image product-6">
+                            <div class="image-content">
+                                <img src="images/argan-serum.jpg" alt="">
+                                <p>Hair Oil</p>
+                            </div>
+                        </div>
+                        <div class="product-actions">
+                            <button class="btn-wishlist" aria-label="Add to wishlist">
+                                <i class="far fa-heart"></i>
+                            </button>
+                            <button class="btn-quick-view" aria-label="Quick view">
+                                <i class="far fa-eye"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Argan Oil Hair Serum</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <span>(4.2)</span>
+                        </div>
+                        <p class="product-description">Pure argan oil for shine and frizz control</p>
+                        <div class="product-footer">
+                            <span class="product-price">₦9,900</span>
+                            <button class="btn-add-cart">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- Services Section -->
+    <section class="features-section" id="services">
+        <div class="features-intro">
+            <h2>We offer Digital Services to help you and your brand grow.</h2>
+            <div class="features-list">
+                <ul>
+                    <li>Creative beauty solutions tailored to your needs</li>
+                    <li>Sustainable Marketing strategies to help your business grow</li>
+                    <li>Award-winning team with proven track record</li>
+                    <li>24/7 client support and customer service</li>
+                    <li>Comprehensive services from concept to completion</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Services Grid -->
+        <div class="services-grid">
+            <div class="service-card">
+                <div class="service-icon"><i class="fas fa-chart-line"></i></div>
+                <h3>Strategic Planning</h3>
+                <p>Data-driven marketing strategies that align with your business goals and drive measurable results.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon"><i class="fas fa-search"></i></div>
+                <h3>Market Research</h3>
+                <p>In-depth analysis of market trends and consumer behavior to inform smart business decisions.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon"><i class="fas fa-rocket"></i></div>
+                <h3>Brand Promotion</h3>
+                <p>Creative campaigns that elevate your brand visibility and engage your target audience effectively.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon"><i class="fas fa-clock"></i></div>
+                <h3>Real-time Analytics</h3>
+                <p>Live performance tracking and reporting to monitor campaign success and optimize strategies.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon"><i class="fas fa-headset"></i></div>
+                <h3>Client Support</h3>
+                <p>Dedicated support team available round-the-clock to assist with your needs and questions.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon"><i class="fas fa-bullseye"></i></div>
+                <h3>Strategic Placement</h3>
+                <p>Optimal positioning of your brand across multiple channels for maximum impact and reach.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials-section">
+        <div class="container">
+            <h2 class="section-title">What Our Customers Say</h2>
+            <div class="testimonials-slider">
+                <div class="testimonial-card active">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"ZAGRED products transformed my skincare routine completely. The results were visible within just two weeks. Their digital marketing service also helped grow my beauty salon's online presence tremendously!"</p>
+                    <div class="testimonial-author">
+                        <h4>Chioma Adebayo</h4>
+                        <p>Beauty Salon Owner, Lagos</p>
+                    </div>
+                </div>
+                <button class="slider-btn prev" id="prevTestimonial">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <button class="slider-btn next" id="nextTestimonial">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer services-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>✨ ZAGRED</h3>
+                    <p>Transforming beauty through innovation and digital excellence. Premium products and strategies for the modern world.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Us</h4>
+                    <ul>
+                        <li><i class="fas fa-phone"></i> +234 904 631 2118</li>
+                        <li><i class="fas fa-phone"></i> +234 807 867 5640</li>
+                        <li><i class="fas fa-envelope"></i> info@zagred.com</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Lagos, Nigeria</li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html">Products</a></li>
+                        <li><a href="about.html">Contact</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Trust & Certification</h4>
+                    <p><i class="fas fa-shield-alt"></i> ISO9001 Certified</p>
+                    <p><i class="fas fa-users"></i> 10,000+ Customers</p>
+                    <form class="newsletter-form" id="newsletterForm">
+                        <input type="email" placeholder="Join our newsletter" required>
+                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 ZAGRED. All Rights Reserved.</p>
+                <div class="footer-links">
+                    <a href="#">Terms of Use</a>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Cookie Preferences</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>

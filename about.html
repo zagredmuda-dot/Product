@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - ZAGRED</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <header class="main-header">
+        <div class="container-nav">
+            <div class="logo">
+                <h1>✨ ZAGRED</h1>
+            </div>
+            <nav class="main-nav" id="mainNav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Products</a></li>
+                    <li><a href="about.html" class="active">Contact</a></li>
+                    <li><a href="signup.html" class="btn-signup">Get Started</a></li>
+                </ul>
+                <button class="mobile-toggle" id="mobileToggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="page-hero about-hero">
+        <div class="container">
+            <h1 class="fade-in-up">Let's Connect</h1>
+            <p class="fade-in-up">Have questions about our beauty products or marketing services? We're here to help you shine.</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-wrapper">
+                <!-- Contact Form -->
+                <div class="contact-form-container scroll-reveal">
+                    <div class="form-header">
+                        <h2>Send Us a Message</h2>
+                        <p>Whether you're interested in our beauty products, need marketing consultation, or have any questions, fill out the form below and our team will get back to you within 24 hours.</p>
+                    </div>
+                    
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-group">
+                            <label for="name">
+                                <i class="fas fa-user"></i> Full Name *
+                            </label>
+                            <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+                            <span class="error-message"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">
+                                <i class="fas fa-envelope"></i> Email Address *
+                            </label>
+                            <input type="email" id="email" name="email" placeholder="your.email@example.com" required>
+                            <span class="error-message"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">
+                                <i class="fas fa-phone"></i> Phone Number
+                            </label>
+                            <input type="tel" id="phone" name="phone" placeholder="+234 000 000 0000">
+                            <span class="error-message"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="designation">
+                                <i class="fas fa-briefcase"></i> Company/Business Name
+                            </label>
+                            <input type="text" id="designation" name="designation" placeholder="Your company or business name">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject">
+                                <i class="fas fa-tag"></i> What are you interested in? *
+                            </label>
+                            <select id="subject" name="subject" required>
+                                <option value="">Select an option</option>
+                                <option value="products">Beauty Products</option>
+                                <option value="marketing">Digital Marketing Services</option>
+                                <option value="partnership">Business Partnership</option>
+                                <option value="wholesale">Wholesale Orders</option>
+                                <option value="support">Customer Support</option>
+                                <option value="other">Other Inquiry</option>
+                            </select>
+                            <span class="error-message"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">
+                                <i class="fas fa-comment"></i> Your Message *
+                            </label>
+                            <textarea id="message" name="message" rows="6" placeholder="Tell us more about how we can help you..." required></textarea>
+                            <span class="error-message"></span>
+                        </div>
+
+                        <div class="form-group checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="newsletter" name="newsletter">
+                                <span>Subscribe to ZAGRED newsletter for exclusive beauty tips, product launches, and marketing insights</span>
+                            </label>
+                        </div>
+
+                        <button type="submit" class="btn-submit">
+                            <span class="btn-text">Send Message</span>
+                            <span class="btn-loader" style="display: none;">
+                                <i class="fas fa-spinner fa-spin"></i>
+                            </span>
+                        </button>
+                    </form>
+
+                    <!-- Success Message -->
+                    <div id="successMessage" class="success-message" style="display: none;">
+                        <i class="fas fa-check-circle"></i>
+                        <h3>Message Sent Successfully!</h3>
+                        <p>Thank you for contacting ZAGRED. Our team will respond to your inquiry within 24 hours.</p>
+                    </div>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="contact-info-container scroll-reveal">
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <h3>Visit Our Office</h3>
+                        <p>ZAGRED Beauty & Marketing<br>123 Victoria Island<br>Lagos, Nigeria</p>
+                    </div>
+
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <h3>Call Us</h3>
+                        <p>
+                            <a href="tel:+2349046312118">+234 904 631 2118</a><br>
+                            <a href="tel:+2348078675640">+234 807 867 5640</a><br>
+                            <span style="font-size: 0.9rem; opacity: 0.8;">Mon - Fri: 9AM - 6PM</span>
+                        </p>
+                    </div>
+
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <h3>Email Us</h3>
+                        <p>
+                            General: <a href="mailto:info@zagred.com">info@zagred.com</a><br>
+                            Support: <a href="mailto:support@zagred.com">support@zagred.com</a><br>
+                            Marketing: <a href="mailto:marketing@zagred.com">marketing@zagred.com</a>
+                        </p>
+                    </div>
+
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <h3>Business Hours</h3>
+                        <p>
+                            Monday - Friday<br>9:00 AM - 6:00 PM<br>
+                            Saturday: 10:00 AM - 4:00 PM<br>
+                            Sunday: Closed
+                        </p>
+                    </div>
+
+                    <div class="info-card social-card">
+                        <h3>Follow ZAGRED</h3>
+                        <p>Stay connected with us on social media for beauty tips, product updates, and marketing insights.</p>
+                        <div class="social-links">
+                            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text scroll-reveal">
+                    <h2>About ZAGRED</h2>
+                    <p>ZAGRED is a leading beauty and digital marketing company based in Lagos, Nigeria. We specialize in providing premium beauty products while offering comprehensive digital marketing solutions to help beauty brands thrive in the modern marketplace.</p>
+                    <p>With over 15 years of experience, we've built a reputation for quality, innovation, and exceptional customer service. Our team of beauty experts and marketing professionals work tirelessly to deliver solutions that exceed expectations.</p>
+                    <p>We believe in the power of combining traditional beauty wisdom with modern technology to create products and strategies that truly make a difference. Our ISO9001 certification ensures that every product and service meets the highest international standards.</p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <h3 class="stat-number" data-target="10000">0</h3>
+                            <p>Happy Customers</p>
+                        </div>
+                        <div class="stat">
+                            <h3 class="stat-number" data-target="500">0</h3>
+                            <p>Products</p>
+                        </div>
+                        <div class="stat">
+                            <h3 class="stat-number" data-target="15">0</h3>
+                            <p>Years Experience</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image scroll-reveal">
+                    <div class="placeholder-image about-img">
+                        <div class="image-content">
+                            <i class="fas fa-building"></i>
+                            <p>ZAGRED Headquarters</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Values Section -->
+    <section class="values-section">
+        <div class="container">
+            <h2 class="section-title">Our Core Values</h2>
+            <p class="section-subtitle">What drives us at ZAGRED</p>
+            <div class="values-grid">
+                <div class="value-card scroll-reveal">
+                    <i class="fas fa-gem"></i>
+                    <h3>Quality First</h3>
+                    <p>We never compromise on the quality of our products or services.</p>
+                </div>
+                <div class="value-card scroll-reveal">
+                    <i class="fas fa-lightbulb"></i>
+                    <h3>Innovation</h3>
+                    <p>Continuously pushing boundaries to deliver cutting-edge solutions.</p>
+                </div>
+                <div class="value-card scroll-reveal">
+                    <i class="fas fa-heart"></i>
+                    <h3>Customer Care</h3>
+                    <p>Your satisfaction and success are at the heart of everything we do.</p>
+                </div>
+                <div class="value-card scroll-reveal">
+                    <i class="fas fa-handshake"></i>
+                    <h3>Integrity</h3>
+                    <p>Honest, transparent, and ethical in all our business practices.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map-section">
+        <div class="container">
+            <h2 class="section-title">Find Us</h2>
+            <div class="map-container">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.7477267890877!2d3.4207656!2d6.4281536!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b8b5e0e0a1a87%3A0x3b99b0e5a0c0a0!2sVictoria%20Island%2C%20Lagos!5e0!3m2!1sen!2sng!4v1234567890123!5m2!1sen!2sng" 
+                    width="100%" 
+                    height="450" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>✨ ZAGRED</h3>
+                    <p>Transforming beauty through innovation and digital excellence. Your trusted partner for premium beauty solutions and marketing strategies.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html">Products</a></li>
+                        <li><a href="about.html">Contact</a></li>
+                        <li><a href="#">Careers</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <ul>
+                        <li><i class="fas fa-phone"></i> +234 904 631 2118</li>
+                        <li><i class="fas fa-phone"></i> +234 807 867 5640</li>
+                        <li><i class="fas fa-envelope"></i> info@zagred.com</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Victoria Island, Lagos, Nigeria</li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Certification</h4>
+                    <p><i class="fas fa-shield-alt"></i> ISO9001 Certified</p>
+                    <p><i class="fas fa-users"></i> 10,000+ Satisfied Customers</p>
+                    <form class="newsletter-form" id="footerNewsletter">
+                        <input type="email" placeholder="Newsletter signup" required>
+                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 ZAGRED. All Rights Reserved.</p>
+                <div class="footer-links">
+                    <a href="#">Terms of Use</a>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Cookie Preferences</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
