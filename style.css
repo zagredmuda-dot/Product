@@ -1457,7 +1457,7 @@ button { cursor: pointer; border: none; outline: none; font-family: inherit; }
    ======================================== */
 .about-section {
   padding: 7rem 0;
-  background: var(--cream);
+  /* background: var(--cream); */
 }
 
 .about-content {
