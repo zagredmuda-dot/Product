@@ -1512,7 +1512,7 @@ button { cursor: pointer; border: none; outline: none; font-family: inherit; }
 }
 
 .about-image {
-  border-radius: var(--radius-lg);
+  /* border-radius: var(--radius-lg); */
   overflow: hidden;
   box-shadow: var(--shadow-lg);
 }
